@@ -2,7 +2,8 @@
 
 ## Aim
 
-The aim was to learn how to host a website on Firebase and see if it could be used as a simple database solution
+The aim was to learn how to host a website on Firebase and see if it could be used as a simple database solution.
+Additionally, I set up the Firebase Hosting Github Action, which allows to deploy to a new preview channel for every PR.
 
 ## Resources
 
