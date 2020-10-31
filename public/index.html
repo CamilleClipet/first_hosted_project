@@ -14,6 +14,7 @@
     <link rel="icon" href="./img/core-img/planet-earth.png">
 
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -38,7 +39,17 @@
                                 <h2 data-animation="bounceInDown" data-delay="900ms">This is <br>our product</h2>
                                 <p data-animation="bounceInDown" data-delay="500ms">Be the first to hear. Join our mailing list.</p>
                                 <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
-                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Subscribe</a>
+                                    <form class="subscribe-form">
+                                        <div class="form-row">
+                                            <div class="col">
+                                              <input type="text" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="col">
+                                              <input type="email" class="form-control" placeholder="Email">
+                                            </div>
+                                            <input type="submit" class="btn alime-btn mb-3 mb-sm-0 mr-4 ml-1">
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

@@ -1156,4 +1156,13 @@ text-shadow: none;
 		font-size: 2em;
 	}
 
+.display-flex {
+	display: flex;
+}
+
+.subscribe-form .form-control:focus {
+    box-shadow: none;
+    border-color: #fc6060;
+}
+
 	

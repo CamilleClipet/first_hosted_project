@@ -418,8 +418,6 @@ input:required {
   position: relative;
   z-index: 1;
   min-width: 160px;
-  height: 46px;
-  line-height: 42px;
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
@@ -429,7 +427,6 @@ input:required {
   background-color: transparent;
   color: #ffffff;
   border: 2px solid #fc6060;
-  border-radius: 60px;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms; }
