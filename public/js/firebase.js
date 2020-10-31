@@ -34,7 +34,9 @@ function firebasePush(name, email) {
 //push on form submit
     if (form) {
         form.addEventListener('submit', function (evt) {
+            // TODO: find why function doesn't trigger without preventDefault
+            evt.preventDefault();
             firebasePush(inputName, inputEmail);
-            return alert('Thank you for your registration');
+            alert('Thank you for your registration');
         })
     }
