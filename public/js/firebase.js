@@ -20,29 +20,21 @@ const config = {
 
 
 //create a functions to push
-    function firebasePush(name, email) {
-        //prevents from braking
-        if (!firebase.apps.length) {
-            firebase.initializeApp(config);
-        }
-        console.log('==========');
-        console.log(name);
-        console.log(email);
-        //push itself
-        var mailsRef = firebase.database().ref('emails').push().set(
-            {
-                user: {name: name.value, email: email.value}
-            }
-        );
+function firebasePush(name, email) {
+    //prevents from braking
+    if (!firebase.apps.length) {
+        firebase.initializeApp(config);
     }
+    //push itself
+    firebase.database().ref('subscribed_users').push().set({
+            user: {name: name.value, email: email.value}
+        });
+}
 
 //push on form submit
     if (form) {
         form.addEventListener('submit', function (evt) {
-            console.log('submit');
-            evt.preventDefault();
             firebasePush(inputName, inputEmail);
-            //shows alert if everything went well.
-            return alert('Data Successfully Sent to Realtime Database');
+            return alert('Thank you for your registration');
         })
     }

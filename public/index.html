@@ -28,8 +28,6 @@
 
     <!-- Welcome Area Start -->
     <section class="welcome-area">
-        <div class="welcome-slides owl-carousel">
-            <!-- Single Slide -->
             <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpeg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
@@ -47,7 +45,9 @@
                                             <div class="col">
                                               <input type="email" id="inputEmail" class="form-control" placeholder="Email">
                                             </div>
-                                            <input type="submit" class="btn alime-btn mb-3 mb-sm-0 mr-4 ml-1">
+                                            <button type="submit" class="btn alime-btn mb-3 mb-sm-0 mr-4 ml-1" id="submitButton">
+                                                Submit
+                                            </button>
                                         </div>
                                     </form>
                                 </div>
@@ -56,7 +56,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Welcome Area End -->
 
@@ -96,7 +95,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/default-assets/active.js"></script>
     <!-- Firebase Real-Time Database -->
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-    <script> src="js/firebase.js" </script>
+    <script src="js/firebase.js"></script>
 
 </body>
 
