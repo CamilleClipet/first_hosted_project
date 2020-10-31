@@ -14,6 +14,7 @@
     <link rel="icon" href="./img/core-img/planet-earth.png">
 
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -27,8 +28,6 @@
 
     <!-- Welcome Area Start -->
     <section class="welcome-area">
-        <div class="welcome-slides owl-carousel">
-            <!-- Single Slide -->
             <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpeg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
@@ -38,14 +37,25 @@
                                 <h2 data-animation="bounceInDown" data-delay="900ms">This is <br>our product</h2>
                                 <p data-animation="bounceInDown" data-delay="500ms">Be the first to hear. Join our mailing list.</p>
                                 <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
-                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Subscribe</a>
+                                    <form class="subscribe-form">
+                                        <div class="form-row">
+                                            <div class="col">
+                                              <input type="text" id="inputName" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="col">
+                                              <input type="email" id="inputEmail" class="form-control" placeholder="Email">
+                                            </div>
+                                            <button type="submit" class="btn alime-btn mb-3 mb-sm-0 mr-4 ml-1" id="submitButton">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Welcome Area End -->
 
@@ -83,6 +93,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <!-- Firebase Real-Time Database -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="js/firebase.js"></script>
 
 </body>
 

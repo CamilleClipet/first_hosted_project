@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
+#      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.FIREBASE_TOKEN }}'
+          repoToken: '${{secrets.GITHUB_TOKEN}}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIRST_HOSTED_PROJECT }}'
           channelId: live
           projectId: first-hosted-project
